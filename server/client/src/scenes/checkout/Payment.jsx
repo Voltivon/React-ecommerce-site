@@ -28,8 +28,8 @@ const Payment = ({ values, touched, errors, handleBlur, handleChange}) => {
            label="Phone Number"
            onBlur={handleBlur}
            onChange={handleChange}
-           value={values.firstPhoneNumber}
-           name="email"
+           value={values.phoneNumber}
+           name="phoneNumber"
            error={!!touched.phoneNumber && !!errors.phoneNumber}
            helperText={touched.phoneNumber && errors.phoneNumber}
            sx={{ gridColumn: "span 4"}}
